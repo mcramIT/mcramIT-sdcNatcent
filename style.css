@@ -1,12 +1,86 @@
-
-
-@font-face {
-    src: url(assests/fonts/BIMBEY\ Shadow.otf);
+body {
+    background: url("assests/images/bkgdimg.jpg");
     font-family: bimby;
+    font-size: medium;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.paragraph {
+.sidebar {
+    flex: 1 1 20%;
+    min-width: 300px;
+    padding: 3cm;
+}
+
+.logo {
+    text-transform: uppercase;
+    margin-bottom: 2cm;
+}
+
+
+.main-content {
     font-size: 50px;
     line-height: 62px;
     font-family: bimby;
+}
+
+.nav-items {
+    text-decoration: none;
+    font-size: large;
+    display: inline-block;
+    margin-right: 2cm;
+
+    @media (min-width: 1500px) {
+        display: inline-block;
+        margin: 7vh 0;
+    }
+}
+
+.main-content {
+    padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+}
+
+.portfolio {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    background-color: chocolate;
+    color: coral;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item.small {
+    grid-row: span, 1;
+    grid-column: span 1;
+}
+
+.portfolio-item.medium {
+    grid-row: span, 2;
+    grid-column: span, 2;
+}
+
+.portfolio-item.large {
+    grid-row: span, 3;
+    grid-column: span, 3;
+}
+
+.portfolio-item.tall {
+    grid-row: span, 2;
+    grid-column: span, 3;
+}
+
+.portfolio-item.wide {
+    grid-row: span, 3;
+    grid-column: span, 2;
 }
