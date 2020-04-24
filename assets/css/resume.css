@@ -1,0 +1,19 @@
+body {
+    background-color: lavender !important;
+}
+
+.Resume {
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatarImage {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-75px) !important;
+    object-fit: cover;
+}
