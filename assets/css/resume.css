@@ -2,18 +2,26 @@ body {
     background-color: lavender !important;
 }
 
-.Resume {
+.resume {
     background-color: white;
     margin-top: 100px;
     margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
 }
 
 .avatarImage {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    transform: translate(-75px) !important;
+    transform: translateY(-75px) !important;
     object-fit: cover;
+}
+
+.avataContainer div {
+    display: flex;
+    justify-content: center;
+}
+
+.headline h1 {
+    margin-top: -75px;
 }

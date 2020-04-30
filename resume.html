@@ -17,6 +17,12 @@
     <script src="https://kit.fontawesome.com/938a18ead6.js" crossorigin="anonymous"></script>
     <!--w3 schools-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body id="toTop" data-spy="scroll" data-target="#toTop" data-offset="50">
@@ -68,12 +74,14 @@
 
 
     <!--Resumae-->
-    <div class="container Resume">
-        <div class="row">
-            <div class="avtrcontainer col-12">
-                <img src="assets/images/avtr.jpg" class="avatarImage" />
+    <div class="container resume">
+        <div class="avataContainer">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/avtr.jpg" class="avatarImage" />
+                </div>
             </div>
-            <div>
+            <div class="col-12 headline">
                 <h1>
                     Hi,
                     <br>
@@ -84,8 +92,8 @@
         <section class="bottomSection">
             <div class="row">
                 <!--Lefthand side-->
-                <div class="col-7 leftSubContainer">
-                    <div class="row">
+                <div class="col-12 col-md-7 leftSubContainer">
+                    <div class="aboutBox">
                         <h2>// About Me</h2>
                         <p>I am an UX/UI developer with professional background in Graphic Design.
                             <br>
@@ -93,7 +101,7 @@
                         </p>
                     </div>
                     <!--Education-->
-                    <div class="row">
+                    <div class="education">
                         <h2>// Education</h2>
                         <div class="row">
                             <div class="col-3">
@@ -106,9 +114,9 @@
                         </div>
                     </div>
                     <!--Experience-->
-                    <div>
+                    <div class="experience">
 
-                        <h2>// Education</h2>
+                        <h2>// Experience</h2>
                         <div class="row">
                             <div class="col-3">
                                 <p>Thoughtbot</p>
@@ -151,92 +159,123 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--Righthand side-->
-            <div class="col-7 rightSubContainer">
-                <!--Contacts-->
-                <div class="row">
-                    <h2>// Contacts</h2>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="col">
-                            <i class="far fa-paper-plane"></i>
-                        </div>
-                        <div class="col">
-                            <i class="fab fa-github-alt"></i>
-                        </div>
-                    </div>
-                </div>
-                <!--Skills-->
-                <div class="row">
-                    <div class="col tech">
-                        <h2>// Technical Skills</h2>
+                <!--Righthand side-->
+                <div class="col-12 col-md-5 rightSubContainer">
+                    <!--Contacts-->
+                    <div class="">
+                        <h2>// Contacts</h2>
                         <div class="row">
-                            <div class="col-6">
-                                <p>UX/UI</p>
+                            <div class="col">
+                                <i class="fas fa-mobile-alt"></i>
                             </div>
-                            <div class="col-6">
-                                <p>Adobe XD</p>
+                            <div class="col">
+                                <i class="far fa-paper-plane"></i>
                             </div>
-                            <div class="col-6">
-                                <p>Adobe Illustrator</p>
-                            </div>
-                            <div class="col-6">
-                                <p>Adobe Photoshop</p>
-                            </div>
-                            <div class="col-6">
-                                <p>Adobe InDesign</p>
-                            </div>
-                            <div class="col-6">
-                                <p>HTML</p>
-                            </div>
-                            <div class="col-6">
-                                <p>CSS</p>
-                            </div>
-                            <div class="col-6">
-                                <p>Git Commands</p>
-                            </div>
-                            <div class="col-6">
-                                <p>bootstrap</p>
+                            <div class="col">
+                                <i class="fab fa-github-alt"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="col soft">
-                        <h2>// Soft Skills</h2>
-
+                    <!--Skills-->
+                    <div class="row">
+                        <div class="col tech">
+                            <h2>// Technical Skills</h2>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>UX/UI</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Adobe XD</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Adobe Illustrator</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Adobe Photoshop</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Adobe InDesign</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>Git Commands</p>
+                                </div>
+                                <div class="col-6">
+                                    <p>bootstrap</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col soft">
+                            <h2>// Soft Skills</h2>
+                            <div class="col-6">
+                                <p>Organizing</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Time Management</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Public Speaking</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Teamwork</p>
+                            </div>
+                            <div class="col-6">
+                                <p>Fast Learner</p>
+                            </div>
+                        </div>
                     </div>
-
+                    <!--Hobbies-->
+                    <div>
+                        <h2>// Hobbies</h2>
+                        <div class="row">
+                            <div class="col-4">
+                                <p>Cooking</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Organizing</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Craft Beer</p>
+                            </div>
+                            <div class="col-4">
+                                <p>Dancing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Fun Facts-->
                 </div>
-                <!--Hobbies-->
-                <div class="row">
-                    <div class="col-4">
-                        <p>Cooking</p>
+                <br>
+            </div>
+        </section>
+        <div>
+            <!-- fun fact -->
+            <h2>// Fun Facts</h2>
+            <div>
+                <div class="row funFact">
+                    <div class="col-12">
+                        <p>
+                            <span><i class="fas fa-guitar"></i></span>
+                            I play guitar in a all girl punk band
+                        </p>
                     </div>
-                    <div class="col-4">
-                        <p>Organizing</p>
+                    <div class="col-12 d-none d-sm-block">
+                        <hr />
                     </div>
-                    <div class="col-4">
-                        <p>Craft Beer</p>
+                    <div class="col-12">
+                        <p>
+                            <span><i class="fas fa-running"></i></span>
+                            I can run really fast
+                        </p>
                     </div>
-                    <div class="col-4">
-                        <p>Dancing</p>
-                    </div>
-                </div>
-                <!--Fun Facts-->
-                <div class="row">
-                    <h2>// Fun Facts</h2>
-                    <p>
-                        I play guitar in an all girl punk band.
-                        <br>
-                        I can do a double backflip on a trampoline.
-                    </p>
                 </div>
             </div>
-    </div>
-    </section>
+        </div>
     </div>
     <!-- boostrap scripts -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
