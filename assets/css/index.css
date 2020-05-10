@@ -1,0 +1,161 @@
+.fridge {
+    background-image: url(../images/fridge.jpg) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-left: 18vw;
+    padding-right: 18vw;
+    padding-top: 25vw;
+    height: 135vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    background-color: teal !important;
+    height: 4vw;
+    padding: 7vw;
+    width: 3vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(15deg);
+}
+
+.title:hover {
+    transform: rotate(-45deg);
+    background-color: violet !important;
+}
+
+.title2 {
+    background-color: rgb(128, 58, 0) !important;
+    height: 4vw;
+    padding: 3vw;
+    width: 4vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(15deg);
+}
+
+.title2:hover {
+    transform: rotate(-45deg);
+    background-color: rgb(130, 238, 139) !important;
+}
+
+.moodBoard {
+    background-image: url(../images/moodBoard.png);
+    background-size: cover;
+    height: 4vw;
+    padding: 7vw;
+    width: 3vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(15deg);
+    border-radius: 5%;
+}
+
+.moodBoard:hover {
+    transform: rotate(-25deg);
+    color: rgb(248, 250, 142);
+}
+
+.mbtitle>h1 {
+    background-color: teal;
+    font-size: 3vw;
+}
+
+.persona1 {
+    background-image: url(../images/persona1.png);
+    background-size: cover;
+    height: 6vw;
+    padding: 2vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(-20deg);
+    border-radius: 15%;
+    font-size: 2vw;
+    color: rgb(56, 29, 7);
+}
+
+.persona1:hover {
+    transform: rotate(15deg);
+    color: rgb(250, 181, 125);
+
+}
+
+.persona1>i {
+    background-color: rgb(57, 168, 202);
+    border-radius: 50%;
+    padding: none;
+}
+
+.persona2 {
+    background-image: url(../images/persona2.png);
+    background-size: cover;
+    height: 6vw;
+    padding: 2vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(-20deg);
+    border-radius: 15%;
+    font-size: 2vw;
+    color: rgb(56, 29, 7);
+}
+
+.persona2:hover {
+    transform: rotate(15deg);
+    color: rgb(125, 210, 250);
+
+}
+
+.persona2>i {
+    background-color: rgb(130, 153, 75);
+    border-radius: 50%;
+    padding: none;
+}
+
+.persona3 {
+    background-image: url(../images/persona3.png);
+    background-size: cover;
+    height: 6vw;
+    padding: 2vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(-20deg);
+    border-radius: 15%;
+    font-size: 2vw;
+    color: rgb(56, 29, 7);
+}
+
+.persona3:hover {
+    transform: rotate(15deg);
+    color: rgb(125, 250, 146);
+
+}
+
+.persona3>i {
+    background-color: rgb(121, 93, 158);
+    border-radius: 50%;
+    padding: none;
+}
+
+.webMap {
+    background-image: url(../images/papers.png.png);
+    background-size: cover;
+    height: 4vw;
+    padding: 7vw;
+    width: 3vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(15deg);
+    border-radius: 5%;
+}
+
+.webMap:hover {
+    transform: rotate(-25deg);
+    color: rgb(248, 250, 142);
+}
+
+.wmtitle>h1 {
+    background-color: teal;
+    font-size: 3vw;
+}
