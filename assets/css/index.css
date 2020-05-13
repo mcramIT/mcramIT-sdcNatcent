@@ -1,5 +1,5 @@
 .fridge {
-    background-image: url(../images/fridge.jpg) !important;
+    background-image: url(../images/fridge.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -9,36 +9,6 @@
     height: 135vw;
     text-align: center;
     justify-content: center;
-}
-
-.title {
-    background-color: teal !important;
-    height: 4vw;
-    padding: 7vw;
-    width: 3vw;
-    transition-duration: 500ms;
-    justify-self: center;
-    transform: rotate(15deg);
-}
-
-.title:hover {
-    transform: rotate(-45deg);
-    background-color: violet !important;
-}
-
-.title2 {
-    background-color: rgb(128, 58, 0) !important;
-    height: 4vw;
-    padding: 3vw;
-    width: 4vw;
-    transition-duration: 500ms;
-    justify-self: center;
-    transform: rotate(15deg);
-}
-
-.title2:hover {
-    transform: rotate(-45deg);
-    background-color: rgb(130, 238, 139) !important;
 }
 
 .moodBoard {
@@ -51,6 +21,7 @@
     justify-self: center;
     transform: rotate(15deg);
     border-radius: 5%;
+    box-shadow: 0 0 10vw 0;
 }
 
 .moodBoard:hover {
@@ -70,14 +41,15 @@
     padding: 2vw;
     transition-duration: 500ms;
     justify-self: center;
-    transform: rotate(-20deg);
+    transform: rotate(20deg);
     border-radius: 15%;
     font-size: 2vw;
     color: rgb(56, 29, 7);
+    box-shadow: 0 0 5vw 0;
 }
 
 .persona1:hover {
-    transform: rotate(15deg);
+    transform: rotate(-15deg);
     color: rgb(250, 181, 125);
 
 }
@@ -95,14 +67,15 @@
     padding: 2vw;
     transition-duration: 500ms;
     justify-self: center;
-    transform: rotate(-20deg);
+    transform: rotate(-5deg);
     border-radius: 15%;
     font-size: 2vw;
     color: rgb(56, 29, 7);
+    box-shadow: 0 0 5vw 0;
 }
 
 .persona2:hover {
-    transform: rotate(15deg);
+    transform: rotate(20deg);
     color: rgb(125, 210, 250);
 
 }
@@ -120,14 +93,15 @@
     padding: 2vw;
     transition-duration: 500ms;
     justify-self: center;
-    transform: rotate(-20deg);
+    transform: rotate(35deg);
     border-radius: 15%;
     font-size: 2vw;
     color: rgb(56, 29, 7);
+    box-shadow: 0 0 5vw 0;
 }
 
 .persona3:hover {
-    transform: rotate(15deg);
+    transform: rotate(-10deg);
     color: rgb(125, 250, 146);
 
 }
@@ -146,16 +120,84 @@
     width: 3vw;
     transition-duration: 500ms;
     justify-self: center;
-    transform: rotate(15deg);
-    border-radius: 5%;
+    transform: rotate(-15deg);
+    box-shadow: 0 0 10vw 0;
 }
 
 .webMap:hover {
-    transform: rotate(-25deg);
-    color: rgb(248, 250, 142);
+    transform: rotate(25deg);
+    color: rgb(87, 255, 191);
 }
 
 .wmtitle>h1 {
-    background-color: teal;
+    background-color: rgb(179, 66, 245);
     font-size: 3vw;
+    transform: translateY(-5vw);
+}
+
+.wireFrame {
+    background-image: url(../images/wireFrame.png);
+    background-size: cover;
+    height: 16vw;
+    padding: 2vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(-15deg);
+    box-shadow: 0 0 10vw 0;
+}
+
+.wireFrame:hover {
+    transform: rotate(25deg);
+    color: rgb(241, 191, 241);
+}
+
+.wftitle>h1 {
+    background-color: rgb(243, 151, 45);
+    font-size: 3vw;
+    transform: translateY(5vw);
+}
+
+.styleGuide {
+    background-image: url(../images/styleGuide.jpg);
+    background-size: cover;
+    height: 4vw;
+    padding: 7vw;
+    width: 3vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(30deg);
+    border-radius: 5%;
+    box-shadow: 0 0 10vw 0;
+}
+
+.styleGuide:hover {
+    transform: rotate(-10deg);
+    color: rgb(253, 123, 253);
+}
+
+.sgtitle>h1 {
+    background-color: rgb(30, 128, 0);
+    font-size: 3vw;
+}
+
+.hifi {
+    background-image: url(../images/wireFrame.png);
+    background-size: cover;
+    height: 16vw;
+    padding: 2vw;
+    transition-duration: 500ms;
+    justify-self: center;
+    transform: rotate(-15deg);
+    box-shadow: 0 0 10vw 0;
+}
+
+.hifi:hover {
+    transform: rotate(25deg);
+    color: rgb(241, 191, 241);
+}
+
+.hftitle>h1 {
+    background-color: rgb(243, 151, 45);
+    font-size: 3vw;
+    transform: translateY(5vw);
 }
