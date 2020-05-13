@@ -34,7 +34,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 </head>
 
-<body id="toTop" data-spy="scroll" data-target="#toTop" data-offset="50">
+<body id="toTop" data-spy="scroll" data-target="toTop" data-offset="50">
     <!-- BS navbar -->
     <nav class="navbar navbar-expand-lg customNavBg">
         <a class="navbar-brand" href="index.html"><b>VCD 5D</b></a>
@@ -79,19 +79,102 @@
         <div class="row">
             <div class="col-4 moodBoard">
                 <div class="mbtitle">
-                    <h1>Inspiration</h1>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        <h1>Inspiration</h1>
+                    </button>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Inspiration</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            San Dimas Canyon Nature Center is a Non-profit Organization that focuses on local wildlife.
+                            They
+                            created beautiful trails for the public and care for many animals in their Wildlife
+                            Sanctuary.
+                            It's so great to have a local Nature Center where residents can participate in programs and
+                            educate
+                            themselves on their California Desert environment.
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-2"></div>
             <div class="col-2 persona1">
-                <i class="fas fa-gamepad"></i>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">
+                    <i class="fas fa-gamepad"></i></button>
+            </div>
+            <!-- Modal -->
+            <div id="myModal1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Persona #1</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/persona1.png">
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class="col-2 persona2">
-                <i class="fas fa-spider"></i>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">
+                    <i class="fas fa-spider"></i></button>
             </div>
+            <!-- Modal -->
+            <div id="myModal2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Persona #2</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/persona2.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="col-2 persona3">
-                <i class="fas fa-dove"></i>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">
+                    <i class="fas fa-dove"></i></button>
             </div>
+            <!-- Modal -->
+            <div id="myModal3" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Persona #3</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="assets/images/persona3.png">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div><br><br>
         <div class="row">
             <div class="col-4 webMap">
@@ -117,9 +200,14 @@
             </div>
             <div class="col-3"></div>
             <div class="col-5 hifi">
-                <div class="hftitle">
-                    <h1>Hello</h1>
-                </div>
+                <video controls autoplay loop>
+                    <source src="assets/images/fridge.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 me">
+                <a href="michelleResume.html"><button class="btn">Resume</button></a>
             </div>
         </div>
     </div>
@@ -132,6 +220,30 @@
             <p>TOP</p>
         </footer>
     </a>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
