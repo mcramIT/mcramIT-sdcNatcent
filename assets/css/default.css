@@ -50,6 +50,14 @@ footer {
     height: 50px;
     text-align: center;
     color: white;
-    z-index: 2;
+    z-index: 4;
 }
 
+.btn {
+    padding: 1vw !important;
+}
+
+.close {
+    color: turquoise !important;
+    font-size: 3vw !important;
+}
